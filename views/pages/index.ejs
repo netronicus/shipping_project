@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body class="container">
+    <main>
+      <div class="jumbotron">
+        <h1>Generar una ruta de entrega</h1>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control rounded"
+            placeholder="Nombre del cliente"
+            aria-label="Nombre del cliente"
+            id="name"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control rounded"
+            placeholder="Descripción"
+            aria-label="Descripción"
+            id="desc"
+          />
+        </div>
+        <div class="input-group">
+          <select id="status" class="form-select" aria-label="Default select example">
+            <option selected value="Pendiente">Pendiente</option>
+            <option value="En proceso">En proceso</option>
+            <option value="Entregado">Entregado</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <input
+            type="search"
+            class="form-control rounded"
+            placeholder="Ubicación Inicial"
+            aria-label="Buscar"
+            aria-describedby="search-addon"
+            id="search-text-1"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="search"
+            class="form-control rounded"
+            placeholder="Ubicación Final"
+            aria-label="Buscar"
+            aria-describedby="search-addon"
+            id="search-text-2"
+          />
+        </div>
+        <div class="input-group">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg btn-block"
+            onclick="saveData()"
+          >
+            Guardar
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
